@@ -1,0 +1,90 @@
+body{
+	font-family: 'Courier New', Courier, monospace;
+	background-color: #5FF9B4;
+	color: grey;
+}
+h1{
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+p{
+	font-size: 12px;
+	margin-top: 0px;
+	margin-bottom: 2px;
+}
+
+img{
+	width: 60px;
+	height: 60px;
+}
+
+#container{
+	max-height: 245px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-top: 8px;
+
+}
+.maquinaPedra, .maquinaPapel, .maquinaTesoura{
+	align-self: flex-end;
+}
+#textoPlayer{
+	text-align: start;
+	margin-top: 10px;
+}
+#textoMaquina{
+	position: absolute;
+	right: 0;
+	top: 85	px;
+}
+
+button{
+	background-color: #ffff;
+	border-radius: 10px;
+	border-color: #31AD75;
+}
+
+span{
+	font-size: 12px;
+	float: right;
+	margin-right: 30px;
+	font-weight: bold;
+}
+#play, #reset{
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 10px;
+}
+.hidden{
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+
+@media screen and (min-width: 767px) {
+	h1{
+		font-size: 2em;
+	}
+	p{
+		font-size: 1em;
+		text-align: center;
+	}
+	span{
+		font-size: 1em;
+	}
+	img{
+		width: 100px;
+		height: 100px;
+	}
+	#container{
+		max-height: 450px;
+	}
+	button{
+		font-size: 2em;
+	}
+	#textoMaquina{
+		top: 120px;
+	}
+}
